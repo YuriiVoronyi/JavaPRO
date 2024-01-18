@@ -1,5 +1,7 @@
 package de.aittr.g_31_2_shop.domain;
 
+import de.aittr.g_31_2_shop.domain.interfaces.Product;
+
 import java.util.Objects;
 
 public class CommonProduct implements Product {
