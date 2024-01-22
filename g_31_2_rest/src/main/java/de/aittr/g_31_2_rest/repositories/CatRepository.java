@@ -41,7 +41,7 @@ public class CatRepository implements CrudRepository<Cat>{
     }
 
     @Override
-    public void deleteById() {
+    public void deleteById(int id) {
 
     }
 }

@@ -13,6 +13,7 @@ public class CommonCustomer implements Customer {
     private Cart cart;
 
     public CommonCustomer() {
+        this.isActive = true;
     }
 
     public CommonCustomer(int id, boolean isActive, String name, Cart cart) {
@@ -43,7 +44,8 @@ public class CommonCustomer implements Customer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CommonCustomer that = (CommonCustomer) o;
-        return id == that.id && isActive == that.isActive && Objects.equals(name, that.name) && Objects.equals(cart, that.cart);
+        return id == that.id && isActive == that.isActive && Objects.equals(name, that.name)
+                && Objects.equals(cart, that.cart);
     }
 
     @Override

@@ -15,5 +15,5 @@ public interface CrudRepository<T> {
     void update(T obj);
 
     //Delete
-    void deleteById();
+    void deleteById(int id);
 }

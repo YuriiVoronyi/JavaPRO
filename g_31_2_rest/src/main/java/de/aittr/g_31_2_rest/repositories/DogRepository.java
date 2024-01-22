@@ -44,7 +44,7 @@ public class DogRepository implements CrudRepository<Dog>{
     }
 
     @Override
-    public void deleteById() {
+    public void deleteById(int id) {
 
     }
 }
